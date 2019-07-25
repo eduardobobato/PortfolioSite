@@ -1,0 +1,109 @@
+﻿@charset "UTF-8";
+
+// Bootstrap 3
+@import "bootstrap/bootstrap-variables";
+@import "bootstrap/bootstrap-import";
+
+// Font-Awesome
+@import "fontawesome/fontawesome-variables";
+@import "fontawesome/fontawesome-import";
+
+// Jquery UI
+@import "jquery-ui/jquery-ui";
+
+// SidebarJS
+@import "sidebarjs/sidebarjs";
+
+// Angular UI Notification
+@import "angular-ui-notification/angular-ui-notification";
+
+// Angular Bootstrap Toggle
+@import "angular-bootstrap-toggle/angular-bootstrap-toggle";
+
+// Bootstrap FileInput
+@import "bootstrap-fileinput/fileinput";
+
+// Angular-gantt
+@import "angular-gantt/angular-gantt";
+@import "angular-gantt/angular-gantt-plugins";
+@import "angular-gantt/angular-gantt-bounds-plugin";
+@import "angular-gantt/angular-gantt-dependencies-plugin";
+@import "angular-gantt/angular-gantt-groups-plugin";
+@import "angular-gantt/angular-gantt-labels-plugin";
+@import "angular-gantt/angular-gantt-movable-plugin";
+@import "angular-gantt/angular-gantt-overlap-plugin";
+@import "angular-gantt/angular-gantt-progress-plugin";
+@import "angular-gantt/angular-gantt-sortable-plugin";
+@import "angular-gantt/angular-gantt-table-plugin";
+@import "angular-gantt/angular-gantt-tooltips-plugin";
+@import "angular-gantt/angular-gantt-tree-plugin";
+
+body {
+	background-color: #FFFFFF;
+}
+label {
+    font-weight: normal;
+}
+.loading-page {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:10000;
+	background-color: rgba(0,0,0,0.4);
+}
+.loading-page img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -32px; /* -1 * image width / 2 */
+	margin-top: -32px;  /* -1 * image height / 2 */
+	display: block;
+	color: #000;
+}
+
+.n-p-l {
+	padding-left: 0;
+}
+
+.n-p-r {
+	padding-right: 0;
+}
+
+// Colors
+$blue-primary:      #845908;
+$blue-secondary:    #06355a;
+
+@import "general/general";
+@import "components/checkbox";
+@import "components/searchbox";
+@import "components/card";
+@import "components/table";
+@import "components/button";
+@import "components/datepicker";
+@import "components/componente-semana";
+@import "components/badge";
+
+@import "custom-inputs/checkbox";
+@import "custom-inputs/radio";
+@import "modal/modal";
+@import "modal/modal-historico";
+@import "modal/modal-editar";
+@import "modal/modal-planejar-encoste";
+@import "modal/modal-formar-trem";
+@import "modal/modal-justificar-producao-diaria";
+@import "modal/modal-justificar-dispersao-encoste";
+@import "popover/popover-action";
+@import "usuario/usuarios";
+@import "general/icones-expandir";
+@import "general/table-sortable";
+@import "general/table-general";
+@import "general/filter";
+@import "general/clear-option";
+@import "general/date";
+@import "general/wrapper";
+
+@import "toolbar/toolbar";
+@import "footer/footer";
+@import "erro/erro";

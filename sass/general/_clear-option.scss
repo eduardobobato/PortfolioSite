@@ -1,0 +1,28 @@
+.clearable{
+  position: relative;
+  display: inline-block;
+}
+.clearable input{
+  padding-right: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.clear{
+  display: none;
+  position: absolute;
+  right:0; 
+  top:5px;
+  padding: 0 8px;
+  font-style: normal;
+  font-size: 1.2em;
+  user-select: none;
+  cursor: pointer;
+  
+  &.showClear {
+  	display: block;
+  	z-index: 999999;
+  }
+}
+.clearable input::-ms-clear {  /* Remove IE default X */
+  display: none;
+}

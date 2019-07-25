@@ -1,0 +1,305 @@
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+.pd-3{
+	padding: 3px;
+}
+.pd-30 {
+	padding: 30px;
+}
+.pb-0 {
+    padding-bottom: 0px;
+}
+.pb-5 {
+    padding-bottom: 5px;
+}
+.pb-10 {
+    padding-bottom: 10px;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
+.pb-30 {
+    padding-bottom: 30px;
+}
+.pt-3{
+	padding-top: 3px;
+}
+.pt-5 {
+    padding-top: 5px;
+}
+.pt-10 {
+    padding-top: 10px;
+}
+.pt-15 {
+    padding-top: 15px;
+}
+.pt-15-imp {
+    padding-top: 15px!important;
+}
+.pt-20 {
+    padding-top: 20px;
+}
+.pt-25 {
+    padding-top: 25px;
+}
+.pt-30 {
+    padding-top: 30px;
+}
+.mb-0{
+	margin-bottom: 0px;
+}
+.mb-5 {
+    margin-bottom: 5px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mb-35 {
+    margin-bottom: 35px;
+}
+.mt-5 {
+    margin-top: 5px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-12 {
+    margin-top: 12px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mt-35 {
+    margin-top: 35px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.mt-50 {
+    margin-top: 50px;
+}
+.mt-60 {
+    margin-top: 60px;
+}
+.mt-30-neg {
+    margin-top: -30px;
+}
+.mt-50-neg {
+    margin-top: -50px;
+}
+.mb-34-neg {
+    margin-bottom: -34px;
+}
+.mr-5 {
+	margin-right: 5px;
+}
+.mr-10 {
+	margin-right: 10px;
+}
+.mr-15 {
+	margin-right: 15px;
+}
+.pr-0{
+    padding-right: 0;
+}
+.pr-2{
+    padding-right: 2px;
+}
+.pr-5{
+    padding-right: 5px!important;
+}
+.pr-10{
+    padding-right: 10px;
+}
+.pr-15{
+    padding-right: 15px;
+}
+.pr-20{
+    padding-right: 20px;
+}
+.pl-0{
+    padding-left: 0;
+}
+.pl-2{
+    padding-left: 2px;
+}
+.pl-5{
+    padding-left: 5px!important;
+}
+.pl-15{
+    padding-left: 15px;
+}
+.pl-12{
+    padding-left: 12px;
+}
+.pl-16{
+    padding-left: 16px;
+}
+.pl-20{
+    padding-left: 20px;
+}
+.pl-30{
+    padding-left: 30px;
+}
+.pl-45 {
+	padding-left: 45px;
+}
+.pd-6 {
+    padding: 6px!important;
+}
+.ml-0{
+    margin-left: 0px;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.pd-0 {
+    padding: 0px;
+}
+.pd-15 {
+	padding: 15px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.div-inline {
+	display: inline-block;
+}
+
+.page-title{
+    margin: 5px 0;
+    font-size: 26px;
+    color: $blue-primary;
+}
+
+.grey-subtitle{
+    text-transform: uppercase;
+    color: #999;
+    font-size: 14px;
+}
+
+.no-border-radius{
+    border-radius: 0px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.drop-group {
+	//width: 100%;
+
+	button {
+		width: 100%;
+	    border-radius: 4px !important;
+	    text-align: left;
+		color: #1089ff;
+	    text-transform: uppercase;
+
+		.drop {
+			position: absolute;
+	    	right: 12px;
+	    	top: 14px;
+	    }
+	}
+
+	.drop-scroll {
+		overflow-y: auto;
+    	max-height: 270px;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.cursor-p{
+	cursor: pointer;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.not-clickable {
+	cursor: not-allowed !important;
+}
+
+.not-selectable{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.legend {
+	width:100%;
+	border-bottom: 1px solid #dcdcdc;
+	line-height:0.1em;
+	color: #999;
+	font-size: 12px;
+
+	span {
+		background:#f4f4f4;
+	 	padding: 7px 14px;
+		text-transform: uppercase;
+ 	}
+}
+
+.disable-event {
+	pointer-events: none;
+}
+
+.no-margin-no-padding{
+	div{
+		padding: 0px;
+		//margin: 0px;
+	}
+}
+
+.form-group {
+    select{
+        &:disabled {
+            background-color: #eee;
+        }
+    }
+}
+.col-xs-0-5 {
+    width: 4.16666667%;
+    position: relative;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    td {
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+    }
+}

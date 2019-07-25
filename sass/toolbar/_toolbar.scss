@@ -1,0 +1,180 @@
+
+header.navbar-default {
+    background-color: #845908;
+    border-color: #5a3806;
+    border-radius: 0;
+    
+    .menu-de-paginas > li > a,
+	.menu-da-mesa-de-programacao > li div.usuario-mesa-de-programacao a.dropdown-toggle,
+	.menu-de-notificacoes > li div.usuario-notificacoes > a,
+	.menu-do-usuario > li div.usuario-logado > a.dropdown-toggle {
+    	color: #fff;
+    	
+    	&:focus,
+    	&:active,
+    	&:hover {
+		    text-decoration: none;
+		    background-color: #06355a;
+		}
+	}
+
+	.dropdown-menu {
+		border-radius: 0;
+		
+		a {
+	    	color: #222;
+	    	width: 100%;
+	    	display: block;
+	    	padding: 3px 20px;
+	    	
+	    	&:focus,
+	    	&:active,
+	    	&:hover {
+	    		color: #222;
+			    background-color: #d2d2d2;
+			}
+		}
+	}
+
+	li.active,
+	.nav .open > a {
+		background-color: #06355a;
+		border-color: #06355a;
+	}
+}
+
+.menu-de-paginas {
+	@extend .list-inline;
+	
+    margin: 0 auto;
+    display: inline-block;
+    //width: 725px; // Se voce usar container, mude este valor para 625px
+    text-align: center;
+    height: 50px;
+    
+    & > li {
+    	height: 50px;
+    	padding-left: 0;
+    	padding-right: 0;
+    	
+    	a {
+    		position: relative;
+		    display: block;
+		    padding: 15px 10px; // Qndo voltar as Notificacoes, usar 15px 10px
+		}
+	}
+}
+
+.menu-do-usuario {
+	@extend .list-inline;
+	
+	.usuario-logado {
+ 		height: 50px !important;
+		
+		a {
+		    padding: 5px 15px;
+	        display: inline-block;
+			
+			.photo {
+				display: table-cell;
+				vertical-align: middle;
+				
+				img {
+					@extend .img-circle;
+					
+				    width: 32px;
+				    height: 32px;
+			    }
+			}
+		
+			.info {
+				display: table-cell;
+			    padding: 0 10px;
+			    
+				span.nome,
+				span.cargo {
+				    display: block;
+				    text-overflow: ellipsis;
+				    overflow: hidden;
+				    width: 125px;
+				    white-space: nowrap;
+				}
+			}
+		
+			.icon-dropdown {
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+	
+		ul.dropdown-menu {
+		    border-radius: 0;
+		    min-width: 217px;
+		}
+	}
+}
+
+.menu-de-notificacoes {
+		@extend .list-inline;
+		margin-right: 0;
+		
+		.usuario-notificacoes {
+			height: 50px !important;
+ 
+	 		& > a {
+			    padding: 14px 15px 10px 5px;
+		        display: inline-block;
+		        height: 50px !important;
+		        
+		        i.fa {
+		        	font-size: 25px;
+	        	}
+		        
+		        span.badge {
+				    position: absolute;
+				    top: 10px;
+				    right: 5px;
+				}
+	        }
+		}
+}
+
+.menu-da-mesa-de-programacao {
+	@extend .list-inline;
+	
+	.usuario-mesa-de-programacao {
+    	height: 50px !important;
+ 
+ 		a {
+		    padding: 15px 10px;
+	        display: inline-block;
+	        width: 200px;
+	        
+	        border-left: 1px solid #c0c0c0;
+    		border-right: 1px solid #c0c0c0;
+	        
+			span.mesa-de-programacao {
+				float: left;
+				
+			    display: block;
+			    text-overflow: ellipsis;
+			    overflow: hidden;
+			    width: 168px;
+			    white-space: nowrap;
+			}
+	        
+	        span.icon-dropdown {
+			    float: right;
+			}
+        }
+
+		&.open a {
+			border-color: #fff !important;
+		}
+
+		ul.dropdown-menu {
+		    border-radius: 0;
+		    min-width: 217px;
+		}
+	}
+}

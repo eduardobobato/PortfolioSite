@@ -1,0 +1,19 @@
+.card-form {
+    border: 1px solid rgba(202, 202, 202, 0.363);
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+
+    .card-title {
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: none;
+        color: #333333;
+        padding: 0px;
+        padding-top: 10px;
+    }
+
+    .card-container {
+        margin-top: 20px;
+    }
+}

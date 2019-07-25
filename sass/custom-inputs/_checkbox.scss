@@ -1,0 +1,29 @@
+input[type="checkbox"] {
+	//vertical-align: sub;
+    -webkit-appearance: none;
+    //margin-left: 5px !important;
+      
+    &:before{
+        border: 2px solid #999;
+	    content: "\00a0";
+	    display: inline-block;
+	    height: 14px;
+	    width: 14px;
+	    cursor: pointer;
+	    margin-right: 5px;
+	    font: 12px/1em sans-serif;
+	    padding: 0;
+    }
+     
+    &:checked:before{
+     	background-color: #999;
+    	content: "\2713";
+    	color: #fff;
+    	font-weight: bold;
+    	text-align: center;
+    }
+    
+    &:focus{
+    	outline: none;
+	}  
+}

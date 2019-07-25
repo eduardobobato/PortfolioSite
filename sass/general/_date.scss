@@ -1,0 +1,18 @@
+.date {
+    border-right: none;
+    box-shadow: none;
+    
+    &[readonly]{
+    	background-color: #fff;
+	}
+}
+
+.calendar-addon {
+   	color: inherit;
+    background: #fff;
+    border-left: none;
+    
+    &.disabled {
+    	background: #eee;
+    }
+}

@@ -1,0 +1,145 @@
+.modal-formar-trem {
+
+    .modal-header {
+        position: relative!important;
+        height: 50px;
+    }
+
+    .modal-body {
+        /*position: static!important;*/
+
+        .radio-trem {
+            padding: 20px 0 10px 25px;
+        }
+
+        .trem-grade-container {
+            max-height: 150px;
+            margin-top: -15px;
+
+            .trem-grade-cabecalho {
+                color: #fff;
+                background: #5F89C8;
+                height: 35px;
+                line-height: 35px;
+                font-weight: bold;
+            }
+
+            .trem-grade-conteudo {
+                max-height: 125px;
+                overflow-y: auto;
+                overflow-x: hidden;
+
+                .linha-container {
+                    color: #fff;
+                    background: #5F89C8;
+                    font-weight: bold;
+                    color: #333;
+
+                    &:nth-of-type(odd) {
+                        background-color: #D8D8D8;
+                    }
+
+                    &:nth-of-type(even) {
+                        background-color: #ECECEC;
+                    }
+
+                    .col-destino {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .overflow-x-hidden {
+            overflow-x: hidden;
+        }
+
+        .label-check {
+            padding-top: 15px;
+
+            label.label-with-radio {
+                color: #333;
+                font-weight: bold !important;
+            }
+        }
+
+        .saldo-vagoes {
+            border-top: 1px solid #e5e5e5;
+            margin: 30px 0;
+            padding-top: 30px;
+        }
+
+        .blocagem-vagoes {
+            border-top: 1px solid #e5e5e5;
+            padding-top: 30px;
+        }
+
+        .drop-group {
+            width: 100%;
+
+            button {
+                width: 100%;
+                border-radius: 4px !important;
+                text-align: left;
+                color: #1089ff;
+                text-transform: uppercase;
+
+                .drop {
+                    position: absolute;
+                    right: 12px;
+                    top: 14px;
+                }
+            }
+
+            .drop-scroll {
+                overflow-y: auto;
+                max-height: 270px;
+            }
+        }
+
+        .linhas-table {
+            td {
+                &.id-terminal-produto {
+                    border: none !important;
+                    color: #333;
+                }
+                &.vagoes-selecionados {
+                    background-color: #5ba0e5;
+                    color: #fff;
+                }
+                &.saldo-bloqueado {
+                    background-color: #ccc;
+                    color: #fff;
+                    cursor: not-allowed;
+                }
+            }
+        }
+
+        .total-selecionados {
+            h4, p {
+                display: inline-block;
+            }
+        }
+
+        .table-blocagem {
+            .form-group.date {
+                width: 120px;
+            }
+            .form-group.time {
+                width: 100px;
+            }
+        }
+    }
+}
+
+.vagoes-agrupados-popover {
+    .tab-pane {
+        padding: 20px 0px!important;
+    }
+}

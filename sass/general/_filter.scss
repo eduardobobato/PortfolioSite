@@ -1,0 +1,54 @@
+$filter-text: #999;
+.filter {
+	background-color: #f4f4f4;
+	color: $filter-text;
+	border: 1px solid #dfdfdf;
+	border-radius: 3px;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	display: table;
+	margin: 12px 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	
+	.busca-seg-lot {
+		&.divisor {
+			padding-bottom: 0 !important;
+		}
+	
+		&.has-error{
+			.multiselect-parent {
+				border-color: #a94442;	
+			}	
+		}
+	
+	   .multiselect-parent {
+	  		font-size: 14px;
+	   		background-color: #fff;
+		    border: 1px solid #ccc;
+		    border-radius: 4px;
+		    margin: 0 !important;
+		    padding: 6px 10px;
+		    width: 100%;
+		    
+		    ul.dropdown-menu {
+			    width: 100%;
+			    max-height: 270px;
+			    
+			    input.checkboxInput {
+				    width: inherit !important;
+				}
+			}
+		    						    						    
+		    div {
+			    margin: 0 !important;
+			    toggle-dropdown {
+				    display: flex;
+				    align-items: center;
+				    justify-content: space-between;
+				}
+			
+			}
+		}
+	}
+}

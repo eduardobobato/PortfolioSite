@@ -1,0 +1,21 @@
+.error-page {
+	.access-denied .error-500,
+	.not-found .error-404 {
+		position: static;
+		text-align: center;
+		
+		color: #d9534f;
+	    font-size: 128px;
+	    font-weight: 300;
+	    letter-spacing: -10px;
+	    line-height: 128px;
+	    margin-bottom: 20px;
+	    margin-top: 0;
+	    top: 35px;
+	    right: 50%;
+	}
+
+    h3, p {
+    	color: #999;
+	}
+}

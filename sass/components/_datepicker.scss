@@ -1,0 +1,111 @@
+.uib-datepicker-popup {
+    padding: 5px 10px !important;
+    li{
+        &:focus {
+            outline: none !important;
+        }
+        .uib-datepicker{
+            &:focus {
+                outline: none !important;
+            }   
+            .uib-monthpicker, .uib-yearpicker{
+                &:focus {
+                    outline: none !important;
+                }   
+                table {
+                    &:focus {
+                        outline: none !important;
+                    }
+                    thead {
+                        //background-color: #5e88b2;
+                        border-bottom: 5px solid transparent;
+                        tr{
+                           // background: transparent;
+                            th{
+                                padding-top: 3px;
+                                //background: transparent;
+                                button{
+                                    background-color: #5e88b2;
+                                    color: white;
+                                    border: none!important;
+                                    border-radius: 0px;
+                                }
+                                &:not(:first-child) {
+                                    &:not(:last-child) {
+                                        button{
+                                            padding: 0.3em;
+                                        }
+                                    }
+                                }
+                                &:first-child {
+                                    button {
+                                        padding: 0px;
+                                        text-align: left;
+                                        padding-left: 5px;
+                                        border-top-left-radius: 5px;
+                                        border-bottom-left-radius: 5px;
+                                        &:focus, &:active, &:hover{
+                                            outline: none!important;
+                                            box-shadow: none!important;
+                                        }
+                                        i {
+                                            font-size: 16px;
+                                            color: white;
+                                            font-style: normal;
+                                            &::before {
+                                                font-family: FontAwesome;
+                                                content: '\f0a8';
+                                            }
+                                        }
+                                    }
+                                }
+                                &:last-child {
+                                    button {
+                                        padding: 0px;
+                                        text-align: right;
+                                        padding-right: 6px;
+                                        border-top-right-radius: 5px;
+                                        border-bottom-right-radius: 5px;
+                                        &:focus, &:active, &:hover{
+                                            outline: none!important;
+                                            box-shadow: none!important;
+                                        }
+                                        i {
+                                            font-size: 16px;
+                                            color: white;
+                                            font-style: normal;
+                                            &::before {
+                                                font-family: FontAwesome;
+                                                content: '\f0a9';
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    tbody{
+                        button {
+                            border-radius: 0px;
+                            padding: 5px 10px;
+                            border: 1px solid #d8dcdf;
+                            background: #eee url(../img/jquery-ui-1.10.3.custom/ui-bg_flat_100_eeeeee_40x100.png) 50% 50% repeat-x;
+                            font-weight: normal;
+                            color: #555;
+                        }
+                    }
+                    button{
+                        margin: 2px 0px;
+                        &.active{
+                            background: #5e88b2!important;
+                            border-color: #507ba7!important;
+                            span{
+                                color: #fff!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

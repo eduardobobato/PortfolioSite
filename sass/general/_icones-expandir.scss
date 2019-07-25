@@ -1,0 +1,19 @@
+.first-click {
+ 	cursor: pointer;
+	.icon-close {
+		display: none;
+	}
+	.icon-open { 
+	 	display: inline-block;
+	}
+}
+
+.second-click {
+	cursor: pointer;
+	.icon-close {
+		display: inline-block;
+	}
+	.icon-open { 
+	 	display: none;
+	}
+}

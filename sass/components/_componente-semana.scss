@@ -1,0 +1,82 @@
+.date-filter-area{
+            background: $blue-primary; 
+            margin: 0; 
+            border-top-left-radius: 5px; 
+            border-top-right-radius: 5px; 
+            margin-top: 50px;
+            .weeks {
+                padding: 0px 5px;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                &:focus, &:active, &:hover {
+                    outline: none!important;
+                    text-decoration: none;	
+                }
+            }
+            .filtroPeriodo{
+                b{
+                    color: white;
+                }
+                .input-group{
+                    width: 130px; 
+                    display: inline-table; 
+                    top: 10px; 
+                    margin-left: 15px; 
+                    margin-right: 15px;
+                }
+            }
+            .itens-pag-wrapper{
+                width: 130px;
+                float: right;
+                display: flex;
+                .busca-seg-lot-error {
+                    color: #a94442;
+                }
+                .busca-seg-lot {
+                    width: 100%;
+                    &.divisor {
+                        padding-bottom: 0 !important;
+                    }
+                    .has-error {
+                        border-color: #a94442;
+                    }
+                    .multiselect-parent {
+                        font-size: 14px;
+                        background-color: #fff;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        margin: 0 !important;
+                        padding: 6px 10px;
+                        width: 100%;
+                        ul.dropdown-menu {
+                            min-width: 130px;
+                            max-width: 130px;
+                            overflow: hidden!important;
+                            left: auto;
+                            right: 0;
+                            li{
+                                width: 130px;
+                            }
+                            input.checkboxInput {
+                                width: inherit !important;
+                            }
+                        }
+                        div {
+                            margin: 0 !important;
+                            toggle-dropdown {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+                        }
+                    }
+                }
+                .label-colunas {
+                    color: white !important;
+                    margin-right: 10px;
+                    margin-left: -36px;
+                    margin-top: 7px;
+                }
+            }
+        }

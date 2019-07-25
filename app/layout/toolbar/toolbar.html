@@ -1,0 +1,77 @@
+<header class="navbar navbar-default navbar-inner mywebapp-toolbar">
+	<div class="container-fluid">
+
+		<div class="navbar-header">
+        	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+          	</button>
+        	<a class="navbar-brand">
+				<!-- TODO: Inserir Logo -->
+				<img src="./img/favicon-32x32.png" alt="RUMO"/>
+        	</a>
+        </div>
+
+		<div id="navbar" class="collapse navbar-collapse">
+			<ul class="menu-de-paginas">
+				<li ui-sref-active="active" uib-dropdown>
+					<a href="#" uib-dropdown-toggle>
+						<i class="fa fa-clock-o" aria-hidden="true"></i> DropDown <i class="caret"></i></a>
+					<ul class="dropdown-menu" uib-dropdown-menu>
+						<li role="menuitem">
+							<a href="#/item1" ui-sref="app.item2"> Item 1</a>
+						</li>
+						<li role="menuitem">
+							<a href="#/item2" ui-sref="app.item2"> Item 2</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<!-- <ul class="nav navbar-right menu-do-usuario">
+				<li>
+					<div class="usuario-logado" uib-dropdown>
+						<a href uib-dropdown-toggle>
+							<span class="photo">
+								<img alt="avatar" height="32" width="32" src="./img/no-image.jpg">
+							</span>
+							<span class="info">
+								<span class="nome">{{ Toolbar.usuarioLogado.nome }}</span>
+								<span class="cargo">{{ Toolbar.usuarioLogado.perfil }}</span>
+							</span>
+							<span class="icon-dropdown">
+								<i class="caret"></i>
+							</span>
+						</a>
+						<ul class="dropdown-menu" uib-dropdown-menu>
+							<li><a href="#/logout" ui-sref="auth.logout"><i class="fa fa-power-off"></i> Sair do sistema</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul> -->
+
+			<ui-view name="notificacoes" ng-if="false"></ui-view>
+
+			<!-- <ul class="nav navbar-right menu-da-mesa-de-programacao">
+				<li>
+					<div class="usuario-mesa-de-programacao" uib-dropdown>
+						<a href uib-dropdown-toggle>
+							<span class="mesa-de-programacao">
+								{{ Toolbar.mesaAtualNome }}
+							</span>
+							<span class="icon-dropdown">
+								<i class="caret"></i>
+							</span>
+						</a>
+						<ul class="dropdown-menu" uib-dropdown-menu>
+                        	<li class="cursor-p"><a value="{{mesa.mesa.id}}" ng-repeat="mesa in Toolbar.lista" ng-click="Toolbar.mesaSelecionada(mesa)">{{mesa.mesa.nome}}</a></li>
+                        </ul>
+					</div>
+				</li>
+			</ul> -->
+		</div>
+
+	</div>
+</header>

@@ -1,0 +1,18 @@
+.table{
+    .table-header{
+        th {
+            a {
+                &.ordering-icon{
+                    color: white;
+                    float: right;
+                }
+            }
+            &.order-header{
+                cursor: pointer;
+            }
+            &.ordering {
+                background-color: #1163a9;
+            }
+        }
+    }
+}

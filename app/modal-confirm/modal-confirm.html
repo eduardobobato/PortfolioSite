@@ -1,0 +1,16 @@
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">{{::self.title}}</h3>
+</div>
+
+<div class="modal-body">
+    <span ng-bind-html="self.msg"></span>
+</div>
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary" ng-click="self.voltar()">
+        <i class="modal-icon fa fa-times fa-lg" aria-hidden="true"></i>Cancelar
+    </button>
+    <button type="button" class="btn btn-primary" ng-click="self.confirmar()">
+        <i class="modal-icon fa fa-check fa-lg" aria-hidden="true"></i>Confirmar
+    </button>
+</div>

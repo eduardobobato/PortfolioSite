@@ -1,0 +1,67 @@
+.md-button {
+    background: transparent;
+    border: none;
+    border-radius: 2px;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    height: 36px;
+    letter-spacing: 0;
+    line-height: 1;
+    line-height: 36px;
+    margin: 0;
+    min-width: 64px;
+    outline: none;
+    overflow: hidden;
+    padding: 0 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    -webkit-transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
+    transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
+    vertical-align: middle;
+    will-change: box-shadow;
+    &.md-button-icon {
+        border-radius: 50%;
+        color: inherit;
+        font-size: 20px;
+        height: 32px;
+        line-height: normal;
+        margin-left: 0;
+        margin-right: 0;
+        min-width: 32px;
+        overflow: hidden;
+        padding: 0;
+        width: 32px;
+        i {
+            margin-bottom: 5px !important;
+        }
+    }
+    &.md-button-primary {
+        color: #fff;
+        background-color: #2196f3;
+    }
+    &:disabled {
+        background-color: transparent;
+        color: rgba(0, 0, 0, 0.26);
+        cursor: default;
+    }
+}
+
+.btn-group-custom {
+    display: flex;
+    z-index: 1;
+    .btn {
+        &.active {
+            // border: 1px solid #525252;
+            box-shadow: inset 0 3px 5px rgba(66, 66, 66, 0.28);
+            // border-left: 3px solid $blue-primary;
+            background-color: #d4d4d4;
+        }
+    }
+}
