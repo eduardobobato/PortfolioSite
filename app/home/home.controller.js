@@ -4,13 +4,22 @@
 	angular
 		.module('myApp')
 		.controller('HomeController', [
-			'$scope', '$state', 'localStorageService', 'LanguageService',
-			function ($scope, $state, localStorageService, LanguageService) {
+			'$rootScope', '$state', 'localStorageService', 'LanguageService',
+			function ($rootScope, $state, localStorageService, LanguageService) {
 				var self = this;
+				const nomeTela = 'home';
 
-				function init() {
+				$rootScope.$on('MudaIdioma', function (e, idioma) {
+					mudaIdioma()
+				});
+
+				function mudaIdioma(idioma) {
 					var textos = LanguageService.RetornaTextos('home');
 					self.textos = textos;
+				};
+
+				function init() {
+					mudaIdioma();
 				};
 				init();
 			}

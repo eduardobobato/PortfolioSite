@@ -65,7 +65,7 @@
 					<div class="usuario-mesa-de-programacao" uib-dropdown>
 						<a href uib-dropdown-toggle>
 							<span class="mesa-de-programacao">
-								<img src="{{ Toolbar.linguaSelecionada.path }}">{{ Toolbar.linguaSelecionada.name }}
+								<img src="{{ Toolbar.linguaSelecionada.path }}"> {{ Toolbar.linguaSelecionada.name }}
 							</span>
 							<span class="icon-dropdown">
 								<i class="caret"></i>
@@ -73,7 +73,7 @@
 						</a>
 						<ul class="dropdown-menu" uib-dropdown-menu>
                         	<li class="cursor-p" ng-repeat="lingua in Toolbar.linguas">
-								<a value="{{ lingua }}" ><img src="{{ lingua.path }}"> {{ lingua.name }}</a>
+								<a value="{{ lingua }}" ng-click="Toolbar.mudaLingua(lingua)"><img src="{{ lingua.path }}"> {{ lingua.name }}</a>
 							</li>
                         </ul>
 					</div>

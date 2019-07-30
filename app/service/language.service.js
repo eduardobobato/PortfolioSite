@@ -24,7 +24,7 @@
                 };
 
                 function retornaTextos(nomeTela) {
-                    var lang = localStorage.getItem('language') || { codigo: null };
+                    var lang = JSON.parse(localStorage.getItem('language')) || { codigo: null };
                     switch (lang.codigo) {
                         case 'br':
                             return AppLanguageBR[nomeTela];
@@ -35,19 +35,24 @@
                     }
                 };
 
-
                 function inicializaLinguagens() {
                     var linguaAtual = localStorage.getItem('language');
                     if (!linguaAtual) {
-                        localStorage.setItem('language', pt_BR);
+                        localStorage.setItem('language', JSON.stringify(PT_BR));
                     }
-                    return localStorage.getItem('language');
+                    return JSON.parse(localStorage.getItem('language'));
+                };
+
+                function mudalingua(lingua) {
+                    localStorage.setItem('language', JSON.stringify(lingua));
+                    return lingua;
                 };
 
                 return {
                     RetornaTextos: retornaTextos,
                     RetornaLinguagensDisponiveis: retornaLinguagensDisponiveis,
-                    InicializaLinguagens: inicializaLinguagens
+                    InicializaLinguagens: inicializaLinguagens,
+                    Mudalingua: mudalingua
                 };
             }
         ]);
