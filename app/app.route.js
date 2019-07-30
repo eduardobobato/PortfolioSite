@@ -43,11 +43,11 @@
 					templateUrl : appSettings.appUrl + '/app/layout/erro/pagina-nao-encontrada.html',
 					authenticate: false
 				})
-				.state('app.acesso-negado', {
-					url         : '/acesso-negado',
-					templateUrl : appSettings.appUrl + '/app/layout/erro/acesso-negado.html',
-					authenticate: false
-				})
+				// .state('app.acesso-negado', {
+				// 	url         : '/acesso-negado',
+				// 	templateUrl : appSettings.appUrl + '/app/layout/erro/acesso-negado.html',
+				// 	authenticate: false
+				// })
 				.state('auth', {
 					abstract: true,
 					views: {
@@ -68,19 +68,27 @@
 						}
 					}
 				})
-				.state('auth.login', {
-					url: '/login',
-					templateUrl: appSettings.appUrl + '/app/auth/login.html',
-					controller: 'LoginController',
-					controllerAs: 'Login',
+				.state('app.home', {
+					url: '/',
+					templateUrl: appSettings.appUrl + '/app/home/home.html',
+					controller: 'HomeController',
+					controllerAs: 'Home',
 				    authenticate: false
 				})
-				.state('auth.logout', {
-	                url: '/logout',
-	                controller: 'LogoutController',
-	                controllerAs: 'Logout',
-	                authenticate: false
-	            });
+				// .state('auth.login', {
+				// 	url: '/login',
+				// 	templateUrl: appSettings.appUrl + '/app/auth/login.html',
+				// 	controller: 'LoginController',
+				// 	controllerAs: 'Login',
+				//     authenticate: false
+				// })
+				// .state('auth.logout', {
+	            //     url: '/logout',
+	            //     controller: 'LogoutController',
+	            //     controllerAs: 'Logout',
+	            //     authenticate: false
+				// })
+				;
             }
     	]);
 

@@ -63,6 +63,54 @@ label {
 	color: #000;
 }
 
+// LOADER
+#loader {
+	$size: 50px;
+	$outer-color: #E53434;
+	$inner-color: #b9b9b9;
+	$bg-color: #7171717d;
+	$speed: .75;
+	$scale: .75;
+	&.backgroud-loader {
+		background: $bg-color;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+	}
+	.loader {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		display: block;
+		margin-top: -($size/2);
+		margin-left: -($size/2);
+	}
+	
+	.loading {
+		display: block;
+		width: $size;
+		height: $size;
+		border-radius: 50%;
+		background: $outer-color;
+		
+		&:after {
+			content: '';
+			@extend .loading;
+			background: $inner-color;
+			animation: expand $speed+s infinite alternate;
+		}
+	}
+	  
+	@keyframes expand {
+		0%   { transform: scale(0); }
+		100% { transform: scale($scale); }
+	}
+	// FIM LOADER
+}
+
+
+
 .n-p-l {
 	padding-left: 0;
 }
@@ -72,8 +120,9 @@ label {
 }
 
 // Colors
-$blue-primary:      #845908;
-$blue-secondary:    #06355a;
+$color-primary:      #460000;
+$color-primary-hover:      #541f1f;
+$color-secondary:    #310000;
 
 @import "general/general";
 @import "components/checkbox";

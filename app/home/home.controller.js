@@ -4,23 +4,15 @@
 	angular
 		.module('myApp')
 		.controller('HomeController', [
-			'$scope', '$state', 'localStorageService',
-			function ($scope, $state, localStorageService) {
+			'$scope', '$state', 'localStorageService', 'LanguageService',
+			function ($scope, $state, localStorageService, LanguageService) {
 				var self = this;
 
-				// Aguardando o sistema carregar a MesaAtual do usuario,
-				// para redirecionar para a tela de previsão de chegada
-				self.possuiMesa = false;
-				$scope.$watch(function () {
-
-						return true;
-					},
-					function (newVal /*, oldVal*/ ) {
-						if (newVal !== undefined && newVal) {
-
-						}
-					}
-				);
+				function init() {
+					var textos = LanguageService.RetornaTextos('home');
+					self.textos = textos;
+				};
+				init();
 			}
 		]);
 

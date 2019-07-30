@@ -1,7 +1,7 @@
 
 header.navbar-default {
-    background-color: #845908;
-    border-color: #5a3806;
+    background-color: $color-primary;
+    border-color: $color-secondary;
     border-radius: 0;
     
     .menu-de-paginas > li > a,
@@ -14,7 +14,7 @@ header.navbar-default {
     	&:active,
     	&:hover {
 		    text-decoration: none;
-		    background-color: #06355a;
+		    background-color: $color-primary-hover;
 		}
 	}
 
@@ -109,7 +109,7 @@ header.navbar-default {
 	
 		ul.dropdown-menu {
 		    border-radius: 0;
-		    min-width: 217px;
+		    min-width: 140px;
 		}
 	}
 }
@@ -174,7 +174,7 @@ header.navbar-default {
 
 		ul.dropdown-menu {
 		    border-radius: 0;
-		    min-width: 217px;
+		    min-width: 140px;
 		}
 	}
 }

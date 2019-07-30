@@ -5,11 +5,10 @@
         .module('myApp')
         .controller('LogoutController', [
         	'$rootScope', '$state', 'authService', 'screenFiltersService',
-        	function($rootScope, $state, authService, screenFiltersService)
+        	function($rootScope, $state, screenFiltersService)
             {
         		$rootScope.$emit('CallResetMenu', {});
-        		screenFiltersService.GetFiltrosTela('planoCarregamento', true);
-                authService.Logout();
+        		//screenFiltersService.GetFiltrosTela('planoCarregamento', true);
                 $state.go('auth.login');
             }
         ]);

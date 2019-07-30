@@ -59,23 +59,26 @@
 
 			<ui-view name="notificacoes" ng-if="false"></ui-view>
 
-			<!-- <ul class="nav navbar-right menu-da-mesa-de-programacao">
+			<ul class="nav navbar-right menu-da-mesa-de-programacao">
+				<!-- Icones - https://www.iconfinder.com/iconsets/stripe-flag-set -->
 				<li>
 					<div class="usuario-mesa-de-programacao" uib-dropdown>
 						<a href uib-dropdown-toggle>
 							<span class="mesa-de-programacao">
-								{{ Toolbar.mesaAtualNome }}
+								<img src="{{ Toolbar.linguaSelecionada.path }}">{{ Toolbar.linguaSelecionada.name }}
 							</span>
 							<span class="icon-dropdown">
 								<i class="caret"></i>
 							</span>
 						</a>
 						<ul class="dropdown-menu" uib-dropdown-menu>
-                        	<li class="cursor-p"><a value="{{mesa.mesa.id}}" ng-repeat="mesa in Toolbar.lista" ng-click="Toolbar.mesaSelecionada(mesa)">{{mesa.mesa.nome}}</a></li>
+                        	<li class="cursor-p" ng-repeat="lingua in Toolbar.linguas">
+								<a value="{{ lingua }}" ><img src="{{ lingua.path }}"> {{ lingua.name }}</a>
+							</li>
                         </ul>
 					</div>
 				</li>
-			</ul> -->
+			</ul>
 		</div>
 
 	</div>

@@ -6,16 +6,16 @@
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		
-		<meta name="author" content="">
-		<meta name="description" content=">
+		<meta name="author" content="Eduardo Bobato">
+		<meta name="description" content="My Website">
 		
 		<link rel="icon" href="./img/favicon.ico?v=f7a6c01c"/>
 		
-		<title></title>
+		<title>My Portifolio</title>
 
 		<script>document.write('<base href="' + window.location.toString().substring(0, window.location.toString().indexOf('#!')) + '" />');</script>
 	
-		<link href="./css/style.css?v=c81de464" rel="stylesheet"/>
+		<link href="./css/style.css" rel="stylesheet"/>
 	</head>
 	
 	<body ng-controller="AppController as App" class="{{ bodyClass }}">
@@ -34,11 +34,11 @@
 
 		<ui-view name="footer"></ui-view>
 
-		<div data-ng-if="loading" class="loading-page">
-			<img src="./img/ajax-loader.gif?v=e8a8ba91"/>
+		<div data-ng-if="loading" id="loader" class="backgroud-loader">
+			<div class="loader loading"></div>
 		</div>
 
-		<script src="./js/scripts.js?v=d41d8cd9"></script>
+		<script src="./js/scripts.js"></script>
 
 	</body>
 </html>

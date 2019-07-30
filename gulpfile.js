@@ -161,6 +161,9 @@ gulp.task('scripts', function() {
 		paths.angular_dir + '/app.run.js',
 		paths.angular_dir + '/app.filter.js',
 
+		paths.angular_dir + '/app.language-br.js',
+		paths.angular_dir + '/app.language-en.js',
+
 		paths.angular_dir + '/app.controller.js',
 		paths.angular_dir + '/layout/footer/footer.controller.js',
 		paths.angular_dir + '/layout/toolbar/toolbar.controller.js',
@@ -172,13 +175,13 @@ gulp.task('scripts', function() {
 		paths.angular_dir + '/service/*.service.js',
 		paths.angular_dir + '/prototype/*.prototype.js',
 
-		//paths.angular_dir + '/auth/auth.run.js',
-		//paths.angular_dir + '/auth/login.controller.js',
-		//paths.angular_dir + '/auth/logout.controller.js',
-		//paths.angular_dir + '/home/home.controller.js',
-		//paths.angular_dir + '/notificacoes/notificacoes.controller.js',
-		//paths.angular_dir + '/modal-confirm/modal-confirm.controller.js',
-		//paths.angular_dir + '/modal-confirm/confirm.service.js'
+		paths.angular_dir + '/auth/auth.run.js',
+		paths.angular_dir + '/auth/login.controller.js',
+		paths.angular_dir + '/auth/logout.controller.js',
+		paths.angular_dir + '/home/home.controller.js',
+		paths.angular_dir + '/notificacoes/notificacoes.controller.js',
+		paths.angular_dir + '/modal-confirm/modal-confirm.controller.js',
+		paths.angular_dir + '/modal-confirm/confirm.service.js'
 	])
 		.pipe(sourcemaps.init())
 		//.pipe(debug())						 // Debug Vinyl file streams to see what files are run through your Gulp pipeline
