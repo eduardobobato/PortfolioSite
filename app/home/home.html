@@ -1,4 +1,35 @@
 <main class="mywebapp-main">
-    <p>{{Home.textos}}</p>
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 class="text-center">{{ Home.textos.name }}</h1>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-xs-12">
+            <h5 class="text-center">{{ Home.textos.cel + ' - ' + Home.textos.mail }}</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h5 class="text-center">
+                <a href="{{ Home.textos.linkedin }}" target="_blank">{{ Home.textos.linkedin }}</a>
+            </h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h5 class="text-center">
+                <a href="{{ Home.textos.github }}" target="_blank">{{ Home.textos.github }}</a>
+            </h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h5 class="text-center">
+                {{ Home.textos.country + ', ' + Home.textos.state + ', ' + Home.textos.city }}</a>
+            </h5>
+        </div>
+    </div>
 </main>
 

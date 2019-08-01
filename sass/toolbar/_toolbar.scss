@@ -5,7 +5,7 @@ header.navbar-default {
     border-radius: 0;
     
     .menu-de-paginas > li > a,
-	.menu-da-mesa-de-programacao > li div.usuario-mesa-de-programacao a.dropdown-toggle,
+	.menu-idiomas-toolbar > li div.idiomas-toolbar a.dropdown-toggle,
 	.menu-de-notificacoes > li div.usuario-notificacoes > a,
 	.menu-do-usuario > li div.usuario-logado > a.dropdown-toggle {
     	color: #fff;
@@ -38,8 +38,8 @@ header.navbar-default {
 
 	li.active,
 	.nav .open > a {
-		background-color: #06355a;
-		border-color: #06355a;
+		background-color: $color-primary;
+		border-color: $color-secondary;
 	}
 }
 
@@ -139,10 +139,10 @@ header.navbar-default {
 		}
 }
 
-.menu-da-mesa-de-programacao {
+.menu-idiomas-toolbar {
 	@extend .list-inline;
 	
-	.usuario-mesa-de-programacao {
+	.idiomas-toolbar {
     	height: 50px !important;
  
  		a {

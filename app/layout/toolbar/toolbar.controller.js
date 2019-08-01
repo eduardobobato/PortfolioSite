@@ -17,7 +17,7 @@
         };
 
         function mudaIdioma(idioma) {
-					var textos = LanguageService.RetornaTextos('home');
+					var textos = LanguageService.RetornaTextos(nomeTela);
 					self.textos = textos;
         };
 

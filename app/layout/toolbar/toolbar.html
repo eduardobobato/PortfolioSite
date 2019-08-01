@@ -16,21 +16,26 @@
 
 		<div id="navbar" class="collapse navbar-collapse">
 			<ul class="menu-de-paginas">
+				<li ui-sref-active="active">
+					<a href="#/" ui-sref="app.home">
+						<i class="fa fa-home" aria-hidden="true"></i> {{ Toolbar.textos.home }}
+					</a>
+				</li>
 				<li ui-sref-active="active" uib-dropdown>
 					<a href="#" uib-dropdown-toggle>
-						<i class="fa fa-clock-o" aria-hidden="true"></i> DropDown <i class="caret"></i></a>
+						<i class="fa fa-clock-o" aria-hidden="true"></i> {{ Toolbar.textos.dropDown.title }} <i class="caret"></i></a>
 					<ul class="dropdown-menu" uib-dropdown-menu>
 						<li role="menuitem">
-							<a href="#/item1" ui-sref="app.item2"> Item 1</a>
+							<a href="#/item1" ui-sref="app.item2"> {{ Toolbar.textos.dropDown.item1 }}</a>
 						</li>
 						<li role="menuitem">
-							<a href="#/item2" ui-sref="app.item2"> Item 2</a>
+							<a href="#/item2" ui-sref="app.item2"> {{ Toolbar.textos.dropDown.item2 }}</a>
 						</li>
 					</ul>
 				</li>
 				<li ui-sref-active="active">
 					<a href="#/clicable" ui-sref="app.clicable">
-						<i class="fa fa-wrench" aria-hidden="true"></i> Clicable
+						<i class="fa fa-wrench" aria-hidden="true"></i> {{ Toolbar.textos.clicable }}
 					</a>
 				</li>
 			</ul>
@@ -59,10 +64,10 @@
 
 			<ui-view name="notificacoes" ng-if="false"></ui-view>
 
-			<ul class="nav navbar-right menu-da-mesa-de-programacao">
+			<ul class="nav navbar-right menu-idiomas-toolbar">
 				<!-- Icones - https://www.iconfinder.com/iconsets/stripe-flag-set -->
 				<li>
-					<div class="usuario-mesa-de-programacao" uib-dropdown>
+					<div class="idiomas-toolbar" uib-dropdown>
 						<a href uib-dropdown-toggle>
 							<span class="mesa-de-programacao">
 								<img src="{{ Toolbar.linguaSelecionada.path }}"> {{ Toolbar.linguaSelecionada.name }}
