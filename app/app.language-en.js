@@ -24,7 +24,10 @@
                 city: 'Curitiba',
                 profile: {
                     title: 'Profile',
-                    description: 'Experience with web software development, working on back-end(Java and C#) and front-end (AngularJS and React). \n Experience with analysis and development of relational databases (MySQL / SQL Server / PLSQL).'
+                    description:[ 
+                                    'Experience with web software development, working on back-end(Java and C#) and front-end (AngularJS and React).',
+                                    'Experience with analysis and development of relational databases (MySQL / SQL Server / PLSQL).'
+                                ]
                 },
                 experience: {
                     title: 'Experience',
@@ -40,7 +43,7 @@
                             company: 'CINQ Technologies',
                             start: 'May, 2018',
                             end: 'Feb, 2019',
-                            office: 'TI Intern',
+                            office: 'IT Intern', //Trainee Delevoper
                             description: 'Web Application Development and maintenance using AngularJS and Java.'
                         }
                     ]

@@ -15,6 +15,8 @@
 
 				function mudaIdioma(idioma) {
 					var textos = LanguageService.RetornaTextos('home');
+
+					
 					self.textos = textos;
 				};
 

@@ -24,7 +24,11 @@
                 city: 'Curitiba',
                 profile: {
                     title: 'Perfil',
-                    description: 'Experiência com desenvolvimento de software web, trabalhando em backend (Java e C #) e frontend (AngularJS e React). \n Experiência com análise e desenvolvimento de bases de dados relacionais (MySQL / SQL Server / PLSQL).'
+                    description: [
+                                    'Experiência com desenvolvimento de software web, trabalhando em backend (Java e C #) e frontend (AngularJS e React).',
+                                    'Experiência com análise e desenvolvimento de bases de dados relacionais (MySQL / SQL Server / PLSQL).'
+                                ]
+
                 },
                 experience: {
                     title: 'Experiencia',
