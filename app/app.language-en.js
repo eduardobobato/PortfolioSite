@@ -64,7 +64,15 @@
                     title: 'Skills',
                     list: [
                         {
-                            name: 'HTML/CSS/JavaScript',
+                            name: 'HTML5',
+                            level: 'Experienced'
+                        },
+                        {
+                            name: 'CSS3',
+                            level: 'Experienced'
+                        },
+                        {
+                            name: 'JavaScript',
                             level: 'Experienced'
                         },
                         {
@@ -85,7 +93,11 @@
                         },
                         {
                             name: 'C#',
-                            level: 'Skillful'
+                            level: 'Beginner'
+                        },
+                        {
+                            name: 'ASP.NET',
+                            level: 'Beginner'
                         },
                         {
                             name: 'REST',
@@ -126,6 +138,10 @@
                         {
                             name: 'PLSQL',
                             level: 'Skillful'
+                        },
+                        {
+                            name: 'PostgreAQL',
+                            level: 'Beginner'
                         }
                     ]
                 },

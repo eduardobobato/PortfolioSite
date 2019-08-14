@@ -90,9 +90,105 @@
                     </h5>
                 </div>
             </div>
-            <h5>
-                
-            </h5>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-xs-3">
+            <h3 class="align-right">{{ Home.textos.education.title }}</h3>
+        </div>
+    </div>
+    <div ng-repeat="educ in Home.textos.education.list" class="row">
+        <div class="col-xs-3">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h4 class="align-right">
+                        {{ educ.schoolName }}
+                    </h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h6 class="align-right">
+                        {{ educ.start + ' > ' + educ.end }}
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-9">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h4>
+                        {{ educ.title }}
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-xs-3">
+            <h3 class="align-right">{{ Home.textos.skills.title }}</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h3 class="align-right">
+                {{ skill.title }}
+            </h3>
+        </div>
+    </div>
+    <div ng-repeat="skill in Home.textos.skills.list" class="row">
+        <div class="col-xs-3">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h4 class="align-right">
+                        {{ skill.name }}
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-9">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h4>
+                        {{ skill.level }}
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-xs-3">
+            <h3 class="align-right">{{ Home.textos.language.title }}</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h4 class="align-right">
+                {{ language.title }}
+            </h4>
+        </div>
+    </div>
+    <div ng-repeat="language in Home.textos.language.list" class="row">
+        <div class="col-xs-3">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h4 class="align-right">
+                        {{ language.language }}
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-9">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h4>
+                        {{ language.level }}
+                    </h4>
+                </div>
+            </div>
         </div>
     </div>
 </main>
