@@ -15,13 +15,18 @@
             },
             home: {
                 name: 'Eduardo Giovani Bobato',
-                linkedin: 'https://www.linkedin.com/in/eduardo-bobato-2429aa154/',
-                github: 'https://github.com/eduardobobato',
-                cel: '+55 (42) 99948-7984',
-                mail: 'eduardobobato@hotmail.com.br',
-                country: 'Brazil',
-                state: 'Paraná',
-                city: 'Curitiba',
+                contact: {
+                    title: "Contact",
+                    linkedinURL: 'https://www.linkedin.com/in/eduardo-bobato-2429aa154/',
+                    linkedin: 'linkedin.com/in/eduardo-bobato',
+                    githubURL: 'https://github.com/eduardobobato',
+                    github: 'github.com/eduardobobato',
+                    cel: '+55 (42) 99948-7984',
+                    mail: 'eduardobobato@hotmail.com.br',
+                    country: 'Brazil',
+                    state: 'Paraná',
+                    city: 'Curitiba',
+                },
                 profile: {
                     title: 'Profile',
                     description:[ 
