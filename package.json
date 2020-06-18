@@ -6,7 +6,7 @@
     "url": "https://github.com/eduardobobato/PortfolioSite.git"
   },
   "dependencies": {
-    "angular": "^1.6.7",
+    "angular": "^1.8.0",
     "angular-animate": "^1.6.7",
     "angular-auto-validate": "^1.19.0",
     "angular-base64-upload": "^0.1.23",
