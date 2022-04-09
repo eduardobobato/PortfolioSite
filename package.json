@@ -39,7 +39,7 @@
     "jquery": "^3.4.1",
     "jquery-ui-dist": "^1.12.1",
     "jsplumb": "^2.3.2",
-    "moment": "^2.16.0",
+    "moment": "^2.29.2",
     "select2": "^4.0.3",
     "select2-bootstrap-theme": "0.1.0-beta.10"
   },
